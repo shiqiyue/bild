@@ -69,7 +69,7 @@ func Rotate(img image.Image, angle float64, options *RotationOptions) *image.RGB
 	if resizeBounds {
 		// Reserve larger size in destination image for full image bounds rotation
 		// If not preserving size, always take image center as pivot
-		pivotX, pivotY = float64(srcW)/2, float64(srcH)/2
+		//pivotX, pivotY = float64(srcW)/2, float64(srcH)/2
 
 		a := math.Abs(float64(srcW) * math.Sin(angleRadians))
 		b := math.Abs(float64(srcW) * math.Cos(angleRadians))
